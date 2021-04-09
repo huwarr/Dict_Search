@@ -28,17 +28,20 @@ find_package(QT NAMES Qt6 Qt5 COMPONENTS Widgets REQUIRED)
 find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Widgets REQUIRED)
 
 set(PROJECT_SOURCES
+        words.txt
         main.cpp
         mainwindow.cpp
         mainwindow.h
         mainwindow.ui
-        words.txt
 )
+
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/words.txt ${CMAKE_CURRENT_BINARY_DIR}/words.txt COPYONLY)
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(dSearch
         ${PROJECT_SOURCES}
     )
+    qt_finalize_executable(dSearch)
 else()
     if(ANDROID)
         add_library(dSearch SHARED
