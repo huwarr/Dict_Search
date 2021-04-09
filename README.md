@@ -1,4 +1,4 @@
-# Searching in a Dictionary 
+# Searching in a Dictionary - a Qt Application
 
 [Dictionary](https://raw.githubusercontent.com/dwyl/english-words/master/words.txt)
 
