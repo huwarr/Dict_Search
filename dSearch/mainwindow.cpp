@@ -23,23 +23,6 @@ MainWindow::~MainWindow()
 {
     delete ui;
 }
-
-void add_word(const QString &word, const QString &inp, QTextEdit *output) {
-    auto iter = word.begin();
-    int j = 0;
-    while (iter != word.end()) {
-        if (j < inp.size() && inp[j] == *iter) {
-            output->moveCursor (QTextCursor::End);
-            output->insertHtml("<b>" + QString(*iter) + "</b>");
-            j++;
-        } else {
-            output->moveCursor (QTextCursor::End);
-            output->insertHtml(*iter);
-        }
-        iter++;
-    }
-}
-
 void MainWindow::on_input_textChanged(const QString &inp)
 {
     ui->output->clear();
@@ -51,8 +34,9 @@ void MainWindow::on_input_textChanged(const QString &inp)
     int i;
     for (i = 0; i < lines && !in.atEnd();) {
         in >> word;
-        if (word.contains(inp)) {
-            add_word(word, inp, ui->output);
+        int j = 0;
+        if ((j = word.indexOf(inp)) != -1) {
+            ui->output->insertHtml(word.replace(j, inp.size(), "<b>" + inp + "</b>"));
             if (i < lines - 1)
                 ui->output->append("");
             i++;
@@ -88,8 +72,9 @@ void MainWindow::on_pushButton_clicked()
         QString inp = ui->input->text();
         while(!in.atEnd()) {
             in >> word;
-            if (word.contains(inp)) {
-                add_word(word, inp, ui->output);
+            int j = 0;
+            if ((j = word.indexOf(inp)) != -1) {
+                ui->output->insertHtml(word.replace(j, inp.size(), "<b>" + inp + "</b>"));
                 ui->output->append("");
             }
         }
