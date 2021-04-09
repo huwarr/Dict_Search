@@ -4,7 +4,9 @@
 
 ## Getting started
 
-Make sure `cmake`and `qt5` are installed, otherwise the project won't build succesfully.
+Make sure that `cmake` and `qt5` are installed, and that you have either Qt5 development pacakages installed or path to Qt5 directory, containing config files, exported to `CMAKE_PREFIX_PATH`.
+
+Otherwise the project won't build succesfully.
 
 ## Building
 
