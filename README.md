@@ -1,6 +1,8 @@
-# Searching in a Dictionary - a Qt Application
+# Searching in a Dictionary - Qt Application
 
 [Dictionary](https://raw.githubusercontent.com/dwyl/english-words/master/words.txt)
+
+***Just in case***: Short clip of me building and running this app on my machine is [here](https://youtu.be/WQ9RHzuD0V4 )
 
 ## Getting started
 
