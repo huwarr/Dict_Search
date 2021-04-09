@@ -19,6 +19,7 @@ Otherwise the project won't build succesfully.
    `cmake .`
 
    `make`
+
 If these commands finish successfully, an executable fill be generated in `dSearch` folder.
 
 4. Start application by running:
