@@ -8,7 +8,6 @@ MainWindow::MainWindow(QWidget *parent)
     , allSeen(false)
 {
     ui->setupUi(this);
-    words.open(QIODevice::WriteOnly | QIODevice::Text | QIODevice::NewOnly);
     if (words.open(QIODevice::ReadOnly | QIODevice::Text)) {
         in.setDevice(&words);
     } else {
