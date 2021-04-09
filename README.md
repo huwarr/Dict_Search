@@ -9,10 +9,16 @@ Make sure `cmake`and `qt5` are installed, otherwise the project won't build succ
 ## Building
 
 1. Clone or download this repository
-2. Run these commands:
-   `cd dSearch`
+
+3. Run these commands:
+
+   `cd Dict_Search/dSearch`
+
    `cmake .`
+
    `make`
 If these commands finish successfully, an executable fill be generated in `dSearch` folder.
+
 4. Start application by running:
+
    `./dSearch`
