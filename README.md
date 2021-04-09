@@ -1,6 +1,6 @@
 # Searching in a Dictionary 
 
-(Dictionary)[https://raw.githubusercontent.com/dwyl/english-words/master/words.txt]
+[Dictionary](https://raw.githubusercontent.com/dwyl/english-words/master/words.txt)
 
 ## Building
 ! make sure `cmake`and `qt5` are installed, otherwise it is impossible to build the project succesfully
