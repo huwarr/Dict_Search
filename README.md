@@ -2,8 +2,11 @@
 
 [Dictionary](https://raw.githubusercontent.com/dwyl/english-words/master/words.txt)
 
+## Getting started
+
+Make sure `cmake`and `qt5` are installed, otherwise the project won't build succesfully.
+
 ## Building
-! make sure `cmake`and `qt5` are installed, otherwise it is impossible to build the project succesfully
 
 1. Clone or download this repository
 2. Run these commands:
