@@ -20,7 +20,7 @@ Make sure that `cmake` and `qt5` are installed. Otherwise the project won't buil
 
    `make`
 
-If these commands finish successfully, an executable will be generated in `dSearch` folder.
+If these commands finish successfully, an executable will be created.
 
 4. Start application by running:
 
